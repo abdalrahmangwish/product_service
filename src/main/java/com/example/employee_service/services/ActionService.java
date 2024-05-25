@@ -15,8 +15,8 @@ public class ActionService {
     @Autowired
     private UserServiceClient userServiceClient;
 
-    public User getUser() {
-        User user = userServiceClient.getUserById();
+    public String getUser() {
+        String user = userServiceClient.getUserById();
         return user;
     }
 }

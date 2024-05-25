@@ -25,7 +25,6 @@ public class ActionController {
     }
     @GetMapping("user")
     public ResponseEntity<?> getUser() {
-        System.out.println("asdsadsad");
         return new ResponseEntity<>(actionService.getUser(), HttpStatus.OK);
     }
 }
