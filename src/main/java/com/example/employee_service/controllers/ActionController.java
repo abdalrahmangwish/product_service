@@ -24,7 +24,7 @@ public class ActionController {
         return new ResponseEntity<>("hiiiiiiiiii", HttpStatus.OK);
     }
     @GetMapping("user")
-    public ResponseEntity<?> getUser() {
+    public ResponseEntity<?> getUser(@RequestHeader("Authorization") String token) {
         return new ResponseEntity<>(actionService.getUser(), HttpStatus.OK);
     }
 }
